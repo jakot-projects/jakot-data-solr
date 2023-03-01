@@ -22,6 +22,8 @@
 		<solr>8.11.2</solr>
 		<springdata.commons>2.7.7</springdata.commons>
 		<java-module-name>spring.data.solr</java-module-name>
+		<jetty.version>9.4.50.v20221201</jetty.version>
+		<netty.version>4.1.89.Final</netty.version>
 	</properties>
 
 	<developers>
@@ -107,6 +109,30 @@
 					<groupId>org.codehaus.woodstox</groupId>
 					<artifactId>woodstox-core-asl</artifactId>
 				</exclusion>
+				<exclusion>
+					<groupId>com.fasterxml.woodstox</groupId>
+					<artifactId>woodstox-core</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>commons-io</groupId>
+					<artifactId>commons-io</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>io.netty</groupId>
+					<artifactId>netty-codec</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>io.netty</groupId>
+					<artifactId>netty-common</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>org.eclipse.jetty</groupId>
+					<artifactId>jetty-client</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>org.eclipse.jetty</groupId>
+					<artifactId>jetty-http</artifactId>
+				</exclusion>
 			</exclusions>
 		</dependency>
 		<dependency>
@@ -131,6 +157,62 @@
 					<groupId>com.fasterxml.jackson.core</groupId>
 					<artifactId>jackson-core</artifactId>
 				</exclusion>
+				<exclusion>
+					<groupId>com.fasterxml.woodstox</groupId>
+					<artifactId>woodstox-core</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>com.google.guava</groupId>
+					<artifactId>guava</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>com.google.protobuf</groupId>
+					<artifactId>protobuf-java</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>commons-collections</groupId>
+					<artifactId>commons-collections</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>io.netty</groupId>
+					<artifactId>netty-codec</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>io.netty</groupId>
+					<artifactId>netty-common</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>org.apache.calcite.avatica</groupId>
+					<artifactId>avatica-core</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>org.apache.calcite</groupId>
+					<artifactId>calcite-core</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>org.apache.commons</groupId>
+					<artifactId>commons-text</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>org.apache.hadoop</groupId>
+					<artifactId>hadoop-common</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>org.eclipse.jetty</groupId>
+					<artifactId>jetty-client</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>org.eclipse.jetty</groupId>
+					<artifactId>jetty-server</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>org.eclipse.jetty</groupId>
+					<artifactId>jetty-http</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>org.eclipse.jetty.http2</groupId>
+					<artifactId>http2-server</artifactId>
+				</exclusion>
 			</exclusions>
 		</dependency>
 		<dependency>
@@ -143,10 +225,142 @@
 					<groupId>org.slf4j</groupId>
 					<artifactId>jcl-over-slf4j</artifactId>
 				</exclusion>
+				<exclusion>
+					<groupId>com.fasterxml.woodstox</groupId>
+					<artifactId>woodstox-core</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>com.google.protobuf</groupId>
+					<artifactId>protobuf-java</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>commons-collections</groupId>
+					<artifactId>commons-collections</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>io.netty</groupId>
+					<artifactId>netty-codec</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>io.netty</groupId>
+					<artifactId>netty-common</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>org.apache.poi</groupId>
+					<artifactId>poi-scratchpad</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>org.apache.calcite.avatica</groupId>
+					<artifactId>avatica-core</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>org.apache.calcite</groupId>
+					<artifactId>calcite-core</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>org.apache.tika</groupId>
+					<artifactId>tika-core</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>org.apache.tika</groupId>
+					<artifactId>tika-parsers</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>org.apache.commons</groupId>
+					<artifactId>commons-text</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>org.apache.hadoop</groupId>
+					<artifactId>hadoop-common</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>org.eclipse.jetty.http2</groupId>
+					<artifactId>http2-server</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>org.eclipse.jetty</groupId>
+					<artifactId>jetty-server</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>org.eclipse.jetty</groupId>
+					<artifactId>jetty-client</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>org.eclipse.jetty</groupId>
+					<artifactId>jetty-http</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>org.jdom</groupId>
+					<artifactId>jdom2</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>xerces</groupId>
+					<artifactId>xercesImpl</artifactId>
+				</exclusion>
 			</exclusions>
 		</dependency>
 
-
+		<!-- Dependencies excluded above -->
+		<dependency>
+			<groupId>commons-io</groupId>
+			<artifactId>commons-io</artifactId>
+			<version>2.7</version>
+		</dependency>
+		<dependency>
+			<groupId>com.google.guava</groupId>
+			<artifactId>guava</artifactId>
+			<version>31.1-jre</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-collections4</artifactId>
+			<version>4.4</version>
+		</dependency>
+		<dependency>
+			<groupId>org.eclipse.jetty</groupId>
+			<artifactId>jetty-client</artifactId>
+			<version>${jetty.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.eclipse.jetty</groupId>
+			<artifactId>jetty-server</artifactId>
+			<version>${jetty.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.eclipse.jetty</groupId>
+			<artifactId>jetty-http</artifactId>
+			<version>${jetty.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.eclipse.jetty.http2</groupId>
+			<artifactId>http2-server</artifactId>
+			<version>${jetty.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>io.netty</groupId>
+			<artifactId>netty-common</artifactId>
+			<version>${netty.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>io.netty</groupId>
+			<artifactId>netty-codec</artifactId>
+			<version>${netty.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>xerces</groupId>
+			<artifactId>xercesImpl</artifactId>
+			<version>2.12.2</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.calcite</groupId>
+			<artifactId>calcite-core</artifactId>
+			<version>1.33.0</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.calcite.avatica</groupId>
+			<artifactId>avatica-core</artifactId>
+			<version>1.23.0</version>
+		</dependency>
 		<!-- CDI -->
 		<!-- Dependency order required to build against CDI 1.0 and test with CDI 2.0 -->
 		<dependency>
@@ -193,8 +407,8 @@
 			<scope>test</scope>
 		</dependency>
 		<dependency>
-			<groupId>mysql</groupId>
-			<artifactId>mysql-connector-java</artifactId>
+			<groupId>com.mysql</groupId>
+			<artifactId>mysql-connector-j</artifactId>
 			<version>8.0.32</version>
 			<scope>test</scope>
 		</dependency>
