@@ -21,7 +21,7 @@
 	<properties>
 		<commons.lang>3.12.0</commons.lang>
 		<solr>8.11.2</solr>
-		<springdata.commons>2.7.8</springdata.commons>
+		<springdata.commons>2.7.13</springdata.commons>
 		<java-module-name>spring.data.solr</java-module-name>
 		<jetty.version>9.4.51.v20230217</jetty.version>
 		<netty.version>4.1.94.Final</netty.version>
