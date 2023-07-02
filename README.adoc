@@ -6,6 +6,8 @@ https://github.com/spring-projects/spring-data-solr[JaKot Data Solr] continues t
 
 For the current version of https://github.com/spring-projects/spring-data-solr[JaKot Data Solr], you can still use the https://docs.spring.io/spring-data/solr/docs/current/reference/html/[documentation of Spring Data Solr].
 
+Information about the latest available version of the library can be found at https://mvnrepository.com/artifact/net.jakot/jakot-data-solr[MVNRepository]
+
 == What's new
 
 === v. 2.7.8-solr8
