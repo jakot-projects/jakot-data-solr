@@ -24,7 +24,7 @@
 		<springdata.commons>2.7.8</springdata.commons>
 		<java-module-name>spring.data.solr</java-module-name>
 		<jetty.version>9.4.51.v20230217</jetty.version>
-		<netty.version>4.1.89.Final</netty.version>
+		<netty.version>4.1.94.Final</netty.version>
 	</properties>
 
 	<developers>
